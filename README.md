@@ -45,7 +45,8 @@ rtree = Radix()
 for subnet in ['192.168.0.0/24', '192.168.1.0/24']:
     rtree.add(subnet)
 
-@match(type='A', fqdn='mx0.end.re'):
+@match(type='A', fqdn='mx0.end.re')
+def geoip(request):
     if rtree.search_best(request['remote-ip']): #if requesting client is in the prefixes listed
         return A('192.168.1.1')
     else:

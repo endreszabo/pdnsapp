@@ -54,4 +54,4 @@ for subnet in ['192.168.0.0/24', '192.168.1.0/24']:
 
 ### 4. example: dynamic reverse records
 
-This is for generating reverse (PTR) DNS entries and their forward (A/AAAA)I lookup.
+This is for generating reverse (PTR) DNS entries and their forward (A/AAAA) lookup.

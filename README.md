@@ -12,7 +12,6 @@ The following code will resond with the IP-address of the querying client for ``
 ```py
 @match(fqdn='myip.end.re',type='A')
 def myip(request):
-    #logd(3,"Generating A",request)
     return A(data=request['remote-ip'])
 ```
 

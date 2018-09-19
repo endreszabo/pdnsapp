@@ -32,6 +32,16 @@ def SOA(data=None, ttl=default_ttl):
     else:
         return {}
 
+def PTR(data=None, ttl=default_ttl):
+    if data:
+        return {
+            'qtype': 'PTR',
+            'data': data,
+            'ttl': ttl
+        }
+    else:
+        return {}
+
 def TXT(data=None, ttl=default_ttl):
     if data:
         return {
@@ -46,6 +56,26 @@ def A(data=None, ttl=default_ttl):
     if data:
         return {
             'qtype': 'A',
+            'data': data,
+            'ttl': ttl
+        }
+    else:
+        return {}
+    
+def AAAA(data=None, ttl=default_ttl):
+    if data:
+        return {
+            'qtype': 'AAAA',
+            'data': data,
+            'ttl': ttl
+        }
+    else:
+        return {}
+
+def CNAME(data=None, ttl=default_ttl):
+    if data:
+        return {
+            'qtype': 'CNAME',
             'data': data,
             'ttl': ttl
         }

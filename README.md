@@ -1,3 +1,9 @@
+# Deprecation notice
+
+The project is deprecated now and this repo has been archived. I moved to [CoreDNS](https://coredns.io/) which is not only waaay faster, but covers all features pdnsapp had. Ok.. well, almost all. I had to develop some [extra coredns plugins](https://github.com/endreszabo/coredns-plugins) to port some niche features anyone would have barely needed on the long run.
+
+---
+
 pdnsapp
 =======
 
